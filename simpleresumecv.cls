@@ -73,10 +73,15 @@
 \renewcommand{\DatestampYM}[2]{#1}
 \renewcommand{\DatestampY}[1]{#1}}
 
-\ProcessOptions\relax
+
+\ProcessOptions\relax % Process given options
+
+\LoadClass{extarticle} % Load the base class
+
+% \ProcessOptions\relax
 
 % Use article class as the base class.
-\LoadClass[10pt,oneside]{article}
+% \LoadClass[10pt,oneside]{article}
 
 % Geometry package for page margins.
 \RequirePackage[
@@ -147,11 +152,11 @@
 % and can be downloaded for free at <http://www.fontsquirrel.com/fonts/tinos>.
 % Symbol table: <http://www.fileformat.info/info/unicode/font/tinos/grid.htm>
 \setmainfont
-    [Path=./Fonts/Tinos/,
-    ItalicFont=Tinos-Italic,
-    BoldFont=Tinos-Bold,
-    BoldItalicFont=Tinos-BoldItalic]
-    {Tinos-Regular.ttf}
+    [Path=./Fonts/Avenir/,
+    ItalicFont=Avenir-BookOblique,
+    BoldFont=Avenir-Roman,
+    BoldItalicFont=Avenir-Oblique]
+    {Avenir-Book.ttf}
 
 % Secondary font: "GNU FreeFont".
 % The "GNU FreeFont" fonts are released under the
@@ -173,7 +178,7 @@
 % Small caps font: Changed to "Tinos".
 \renewcommand{\scshape}{\rmfamily}
 %\renewcommand{\textsc}[1]{\textbf{\MakeUppercase{#1}}}
-
+GTBV             
 % Font styles.
 \newcommand{\UseHeadingFont}{\normalfont}
 \newcommand{\UseHeaderFooterFont}{\UseHeadingFont\fontsize{8.2pt}{9.5pt}\selectfont}
